@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "trim-filename"
+version = "2023.11.12.1"
+description = ""
+authors = ["dmingn <dmingn@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+typer = "^0.9.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.11.0"
+isort = {extras = ["black"], version = "^5.12.0"}
+mypy = "^1.7.0"
+
+[tool.poetry.scripts]
+trim-filename = "trim_filename.__main__:cli"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
