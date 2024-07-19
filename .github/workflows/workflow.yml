@@ -30,7 +30,7 @@ jobs:
 
       - name: Delete tag and release
         if: ${{ failure() }}
-        uses: dev-drprasad/delete-tag-and-release@v1.0.1
+        uses: dev-drprasad/delete-tag-and-release@v1.1
         with:
           tag_name: ${{ github.ref_name }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
